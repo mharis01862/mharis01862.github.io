@@ -279,6 +279,151 @@ body {
     letter-spacing: 1px;
 }
 
+/* --- Publications --- */
+.pub-list {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.pub-item {
+    display: flex;
+    gap: 2rem;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid var(--border);
+}
+
+.pub-year {
+    font-family: monospace;
+    color: var(--accent);
+    font-weight: bold;
+    font-size: 1.2rem;
+    min-width: 60px;
+}
+
+.pub-content h3 {
+    font-size: 1.3rem;
+    margin-bottom: 0.5rem;
+}
+
+.pub-meta {
+    font-style: italic;
+    color: var(--text-dim);
+    margin-bottom: 0.75rem;
+}
+
+.pub-link {
+    color: var(--accent);
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: var(--transition);
+}
+
+.pub-link:hover {
+    text-decoration: underline;
+    opacity: 0.8;
+}
+
+/* --- Awards --- */
+.awards-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+}
+
+.award-card {
+    background: var(--bg-card);
+    padding: 2rem;
+    border-radius: 8px;
+    border: 1px solid var(--border);
+    transition: var(--transition);
+}
+
+.award-card:hover {
+    border-color: var(--accent);
+    transform: translateY(-5px);
+}
+
+.award-date {
+    display: block;
+    color: var(--accent);
+    font-family: monospace;
+    margin-bottom: 0.5rem;
+}
+
+/* --- Organizational Activities Gallery --- */
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+}
+
+.gallery-item {
+    position: relative;
+    border-radius: 8px;
+    overflow: hidden;
+    height: 250px;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.gallery-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(15, 17, 19, 0.85); /* Dark background on hover */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.gallery-item:hover img {
+    transform: scale(1.1);
+}
+
+.gallery-item:hover .gallery-overlay {
+    opacity: 1;
+}
+
+.overlay-text h4 {
+    color: var(--accent);
+    margin-bottom: 0.5rem;
+    font-size: 1.2rem;
+}
+
+.overlay-text p {
+    font-size: 0.9rem;
+    color: var(--text-main);
+}
+
+/* --- Mobile Adjustments --- */
+@media (max-width: 768px) {
+    .pub-item {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+    
+    .pub-year {
+        font-size: 1rem;
+    }
+
+    .gallery-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
 /* --- Buttons --- */
 .btn {
     display: inline-block;
@@ -369,3 +514,4 @@ body {
     }
 
 }
+
