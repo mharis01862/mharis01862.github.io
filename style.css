@@ -562,15 +562,18 @@ body {
         grid-template-columns: 1fr;
     }
     
-   .hero {
-  padding-top: clamp(1rem, 4vw, 2rem);
-    }
+   .hero,
+  .hero-content,
+  .container {
+    padding-top: 1.5rem;
+  }
     
     .section {
         padding: 60px 0;
     }
 
 }
+
 
 
 
