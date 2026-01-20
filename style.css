@@ -562,8 +562,8 @@ body {
         grid-template-columns: 1fr;
     }
     
-    .hero {
-        padding-top: 100px;
+   .hero {
+  padding-top: clamp(1rem, 4vw, 2rem);
     }
     
     .section {
@@ -571,5 +571,6 @@ body {
     }
 
 }
+
 
 
