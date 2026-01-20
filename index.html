@@ -218,6 +218,94 @@ change conditions</h3>
     </div>
 </section>
 
+    <!-- Posters & Presentations Section -->
+<section id="presentations" class="section">
+    <div class="container">
+        <h2 class="section-title">Posters & Conference Presentations</h2>
+        
+        <div class="poster-grid">
+            <!-- Poster Item 1 -->
+            <div class="poster-card">
+                <div class="poster-thumbnail" onclick="openPosterModal('image10.jpeg', 'Integrative Transcriptomics in HCM')">
+                    <img src="image10.jpeg" alt="Poster Thumbnail">
+                    <div class="poster-overlay">
+                        <span class="view-icon">🔍 Click to Preview</span>
+                    </div>
+                </div>
+                <div class="poster-content">
+                    <div class="poster-header">
+                        <span class="poster-tag">Poster</span>
+                        <span class="poster-year">2025</span>
+                    </div>
+                    <h3>Integrative Transcriptomics and Network Medicine in HCM</h3>
+                    <p class="conference-name">BSP Biotechnology Congress, Islamabad</p>
+                    <div class="poster-actions">
+                        <a href="poster1.pdf" class="btn-sm" download>
+                            <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/></svg>
+                            PDF
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Presentation Item 2 -->
+            <div class="poster-card">
+                <div class="poster-thumbnail" onclick="openPosterModal('image23.jpeg', 'HCMdrugs Database Presentation')">
+                    <img src="image23.jpeg" alt="Presentation Thumbnail">
+                    <div class="poster-overlay">
+                        <span class="view-icon">🔍 Click to Preview</span>
+                    </div>
+                </div>
+                <div class="poster-content">
+                    <div class="poster-header">
+                        <span class="poster-tag oral">Oral Presentation</span>
+                        <span class="poster-year">2025</span>
+                    </div>
+                    <h3>HCMdrugs: A Web-based Therapeutic Catalog</h3>
+                    <p class="conference-name">GCUF Innovative Expo, Faisalabad</p>
+                    <div class="poster-actions">
+                        <a href="presentation.pdf" class="btn-sm" download>
+                            <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/></svg>
+                            Slides
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Poster Item 3 -->
+            <div class="poster-card">
+                <div class="poster-thumbnail" onclick="openPosterModal('image9.jpeg', 'Nanoparticles in Agriculture')">
+                    <img src="image9.jpeg" alt="Poster Thumbnail">
+                    <div class="poster-overlay">
+                        <span class="view-icon">🔍 Click to Preview</span>
+                    </div>
+                </div>
+                <div class="poster-content">
+                    <div class="poster-header">
+                        <span class="poster-tag">Poster</span>
+                        <span class="poster-year">2024</span>
+                    </div>
+                    <h3>Iron Nanoparticles Mitigate Textile Wastewater Toxicity</h3>
+                    <p class="conference-name">UCP Training Workshop, Lahore</p>
+                    <div class="poster-actions">
+                        <a href="poster2.pdf" class="btn-sm" download>
+                            <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/></svg>
+                            PDF
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Poster Preview Modal -->
+<div id="posterModal" class="poster-modal" onclick="closePosterModal()">
+    <span class="close-modal">&times;</span>
+    <img class="modal-content" id="modalImg">
+    <div id="modalCaption"></div>
+</div>
+
 <!-- Awards & Honors Section -->
 <section id="awards" class="section bg-alt">
     <div class="container">
@@ -397,6 +485,7 @@ change conditions</h3>
 </body>
 
 </html>
+
 
 
 
