@@ -38,6 +38,7 @@
     <!-- Navigation -->
     <nav class="nav-pill">
         <a href="#about">About</a>
+        <a href="#biography">Biography</a>
         <a href="#services">Expertise</a>
         <a href="#skills">Skills</a>
         <a href="#projects">Projects</a>
@@ -80,81 +81,79 @@
         </div>
     </header>
 
-    <!-- Section 1.5: Impact Metrics -->
-    <section class="section" style="min-height: auto; padding: 0 8% 5rem;">
-        <div class="container impact-bar">
-            <div class="metric-item" data-target="2" data-reveal="scale" data-delay="0">
-                <div class="metric-ring-wrap">
-                    <svg width="110" height="110" viewBox="0 0 110 110">
-                        <circle class="metric-ring-bg" cx="55" cy="55" r="45" />
-                        <circle class="metric-ring-progress" cx="55" cy="55" r="45" />
-                    </svg>
-                    <span class="metric-number-inner">0</span>
+    <!-- Section 2: Biography -->
+    <section id="biography" class="section" style="background: rgba(0, 245, 255, 0.01);">
+        <div class="container">
+            <div class="bio-layout">
+                <div class="bio-visual" data-reveal>
+                    <div class="bio-visual-inner">
+                        <div class="bio-stat">
+                            <i class="fa-solid fa-microscope bio-stat-num"
+                                style="font-size: 2rem; margin-bottom: 0.8rem;"></i>
+                            <span class="bio-stat-label">Integrative Researcher</span>
+                        </div>
+                        <div class="bio-stat">
+                            <i class="fa-solid fa-dna bio-stat-num" style="font-size: 2rem; margin-bottom: 0.8rem;"></i>
+                            <span class="bio-stat-label">Computational Genomicist</span>
+                        </div>
+                        <div class="bio-stat">
+                            <i class="fa-solid fa-gears bio-stat-num"
+                                style="font-size: 2rem; margin-bottom: 0.8rem;"></i>
+                            <span class="bio-stat-label">Bio-Tool Architect</span>
+                        </div>
+                        <div class="bio-stat">
+                            <i class="fa-solid fa-bullhorn bio-stat-num"
+                                style="font-size: 2rem; margin-bottom: 0.8rem;"></i>
+                            <span class="bio-stat-label">Scientific Advocate</span>
+                        </div>
+                    </div>
                 </div>
-                <span class="metric-label">Published</span>
-            </div>
-            <div class="metric-item" data-target="2" data-reveal="scale" data-delay="100">
-                <div class="metric-ring-wrap">
-                    <svg width="110" height="110" viewBox="0 0 110 110">
-                        <circle class="metric-ring-bg" cx="55" cy="55" r="45" />
-                        <circle class="metric-ring-progress" cx="55" cy="55" r="45" />
-                    </svg>
-                    <span class="metric-number-inner">0</span>
+                <div class="bio-text" data-reveal data-delay="150">
+                    <h2 class="highlight">The Scientific Journey.</h2>
+                    <p>I am a bioinformatician and biotechnologist currently pursuing Master's in Bioinformatics at
+                        Government College University Faisalabad. My work is defined by a commitment to bridging the gap
+                        between biological inquiry and computational analysis, with a core focus on transcriptomics and
+                        network medicine.</p>
+                    <p>Through research fellowships and internships at institutions like ICCBS and the Ayub Agricultural
+                        Research Institute, I have developed a multi-disciplinary approach to complex biological
+                        problems. I operate at the intersection of medical genomics and plant biotechnology, ensuring
+                        that data-driven insights are always grounded in experimental reality.</p>
+                    <p>I am a strong advocate for Open Science and community leadership, serving as an active
+                        communicator and environmental advocate. I believe that the future of biotechnology lies in
+                        collaborative, transparent, and reproducible research across both the clinical and agricultural
+                        domains.</p>
                 </div>
-                <span class="metric-label">Under Review</span>
-            </div>
-            <div class="metric-item" data-target="3" data-reveal="scale" data-delay="200">
-                <div class="metric-ring-wrap">
-                    <svg width="110" height="110" viewBox="0 0 110 110">
-                        <circle class="metric-ring-bg" cx="55" cy="55" r="45" />
-                        <circle class="metric-ring-progress" cx="55" cy="55" r="45" />
-                    </svg>
-                    <span class="metric-number-inner">0</span>
-                </div>
-                <span class="metric-label">Under Submission</span>
-            </div>
-            <div class="metric-item" data-target="1" data-reveal="scale" data-delay="300">
-                <div class="metric-ring-wrap">
-                    <svg width="110" height="110" viewBox="0 0 110 110">
-                        <circle class="metric-ring-bg" cx="55" cy="55" r="45" />
-                        <circle class="metric-ring-progress" cx="55" cy="55" r="45" />
-                    </svg>
-                    <span class="metric-number-inner">0</span>
-                </div>
-                <span class="metric-label">In Progress</span>
             </div>
         </div>
     </section>
 
-    <!-- Section 2: Mission -->
+    <!-- Section 2.5: Mission -->
     <section id="about" class="section">
         <div class="container">
-            <h2 data-reveal>Where <span class="highlight">wet lab intuition</span> meets computational precision.</h2>
-            <p class="lead" data-reveal data-delay="150" style="max-width: 900px;">I'm a multidisciplinary
-                bioinformatician with research experience at prestigious institutions, with expertise spanning tissue
-                culture, WES, single-cell RNA-seq, and machine learning pipelines. I operate at the interface of
-                experimental and computational biology, applying integrative approaches to complex biological problems.
+            <h2 data-reveal>Where <span class="highlight">biological inquiry</span> meets computational precision.</h2>
+            <p class="lead" data-reveal data-delay="150" style="max-width: 900px;">I operate at the interface of
+                experimental and computational biology, applying integrative approaches to bridge the bench and the
+                terminal. My focus is on making biological data reproducible, interpretable, and actionable for the
+                scientific community.
             </p>
             <div class="institutional-bar" data-reveal data-delay="300">
                 <div class="inst-item">
+                    <span class="inst-name">Master's Scholar</span>
+                    <span class="inst-location">Bioinformatics, GCUF</span>
+                </div>
+                <div class="inst-divider"></div>
+                <div class="inst-item">
                     <span class="inst-name">Research Assistant</span>
-                    <span class="inst-location">Functional Genomics and Tissue Culture Lab, GCUF</span>
+                    <span class="inst-location">Functional Genomics Lab, GCUF</span>
                 </div>
                 <div class="inst-divider"></div>
                 <div class="inst-item">
-                    <span class="inst-name">Summer Research Fellow</span>
-                    <span class="inst-location">Dr. Panjwani Center for Molecular Genetics and Drug Discovery, ICCBS,
-                        Karachi</span>
-                </div>
-                <div class="inst-divider"></div>
-                <div class="inst-item">
-                    <span class="inst-name">Research Intern</span>
-                    <span class="inst-location">Ayub Agricultural Research Institute, Faisalabad, Pakistan</span>
+                    <span class="inst-name">Fellowship Alum</span>
+                    <span class="inst-location">Molecular Genetics, ICCBS</span>
                 </div>
             </div>
         </div>
     </section>
-
     <!-- Section 3: Analytical Services -->
     <section id="services" class="section">
         <div class="container">
@@ -162,41 +161,40 @@
             <div class="service-cards">
                 <div class="service-card" data-reveal data-delay="0">
                     <div class="service-card-icon"><i class="fa-solid fa-dna"></i></div>
-                    <h3>RNA-seq &amp; scRNA-seq</h3>
-                    <p>End-to-end transcriptomics analysis — from raw reads to biological insight. I work with both bulk
-                        and single-cell datasets, performing differential expression, pathway enrichment, and cell-type
-                        annotation.</p>
+                    <h3>Transcriptomics</h3>
+                    <p>End-to-end RNA-seq and scRNA-seq pipelines. Transforming raw sequencing data into structured
+                        biological insights and pathway annotations.</p>
                 </div>
                 <div class="service-card" data-reveal data-delay="80">
                     <div class="service-card-icon"><i class="fa-solid fa-microscope"></i></div>
-                    <h3>Variant Discovery (WES/WGS)</h3>
-                    <p>GATK best-practice whole-exome and whole-genome sequencing pipelines. During my ICCBS fellowship
-                        I identified 884 high-impact variants in Acute Myeloid Leukemia samples.</p>
+                    <h3>Variant Discovery</h3>
+                    <p>Whole-exome and whole-genome sequencing analysis using industry-standard pipelines for
+                        high-confidence variant identification.</p>
                 </div>
                 <div class="service-card" data-reveal data-delay="160">
                     <div class="service-card-icon"><i class="fa-solid fa-brain"></i></div>
-                    <h3>ML for Biomarker Discovery</h3>
-                    <p>Applying Random Forest, XGBoost, and LASSO regression to genomic data for feature selection and
-                        predictive modelling — bridging statistics and biological meaning.</p>
+                    <h3>Machine Learning</h3>
+                    <p>Applying predictive modeling and feature selection to multi-omics datasets for biomarker
+                        discovery and biological classification.</p>
                 </div>
                 <div class="service-card" data-reveal data-delay="240">
                     <div class="service-card-icon"><i class="fa-solid fa-circle-nodes"></i></div>
-                    <h3>GWAS &amp; Population Genomics</h3>
-                    <p>Genotype-phenotype association studies with downstream LD analysis and Manhattan plot generation.
-                        I enjoy making sense of complex population-level genetic data.</p>
+                    <h3>Network Medicine</h3>
+                    <p>Integrating genotype-phenotype associations with PPI network analysis to identify central
+                        molecular hubs in complex diseases.</p>
                 </div>
                 <div class="service-card" data-reveal data-delay="320">
                     <div class="service-card-icon"><i class="fa-solid fa-magnifying-glass-chart"></i></div>
-                    <h3>Systematic Reviews &amp; Meta-Analysis</h3>
-                    <p>Rigorous evidence synthesis using PRISMA methodology. I've contributed to multi-study syntheses
-                        that establish effect-size baselines for genomic research.</p>
+                    <h3>Meta-Analysis</h3>
+                    <p>Synthesizing global genomic evidence using rigorous methodologies to establish effect-size
+                        baselines and trend intelligence.</p>
                 </div>
                 <div class="service-card" data-reveal data-delay="480"
                     style="border-color:rgba(0,245,255,0.3); background:rgba(0,245,255,0.04);">
                     <div class="service-card-icon"><i class="fa-solid fa-flask"></i></div>
-                    <h3>Wet Lab &amp; Experimental Biology</h3>
-                    <p>Hands-on experience in tissue culture, PCR/qPCR, DNA extraction, gel electrophoresis, biochemical
-                        assays, and microbial isolation — I'm as comfortable at the bench as at the terminal.</p>
+                    <h3>Experimental Biology</h3>
+                    <p>Hands-on expertise in tissue culture, PCR/qPCR, and biochemical assays for the experimental
+                        validation of computational findings.</p>
                 </div>
             </div>
 
@@ -205,19 +203,21 @@
 
         </div>
     </section>
-    
+
     <!-- Section 3.5: Technical Skills -->
     <section id="skills" class="section">
         <div class="container">
             <h2 class="highlight" data-reveal>Technical Arsenal.</h2>
-            <p class="lead" data-reveal data-delay="100" style="margin-bottom: 4rem;">A comprehensive stack of tools, languages, and methodologies I leverage to solve complex biological problems.</p>
+            <p class="lead" data-reveal data-delay="100" style="margin-bottom: 4rem;">A comprehensive stack of tools,
+                languages, and methodologies I leverage to solve complex biological problems.</p>
             <div class="stack-section" style="margin-top: 0;">
                 <div class="stack-grid">
                     <div class="stack-tile">
                         <p class="stack-group-title">Bioinformatics Core</p>
                         <div class="stack-tags">
-                            <span class="stack-tag">sc & Bulk RNA-seq</span>
+                            <span class="stack-tag">scRNA-seq Analysis</span>
                             <span class="stack-tag">WES & NGS Analysis</span>
+                            <span class="stack-tag">Protein Structure Prediction</span>
                             <span class="stack-tag">Phylogenetic Analysis</span>
                         </div>
                     </div>
@@ -266,16 +266,21 @@
 
             <!-- Radar Chart (Integrated) -->
             <div style="margin-top: 10rem; text-align: center;">
-                <h2 class="highlight" data-reveal style="font-size: clamp(2rem, 5vw, 3.5rem); margin-bottom: 1rem;">Domain Competency.</h2>
-                <p class="lead" data-reveal data-delay="150" style="margin: 0 auto 3rem; text-align: center;">Analytical depth across core bioinformatics domains — visualized as a skill radar.</p>
-                <canvas id="radarCanvas" width="520" height="520" data-reveal="scale" data-delay="200" style="display: block; margin: 0 auto; max-width: 520px;"></canvas>
+                <h2 class="highlight" data-reveal style="font-size: clamp(2rem, 5vw, 3.5rem); margin-bottom: 1rem;">
+                    Domain Competency.</h2>
+                <p class="lead" data-reveal data-delay="150" style="margin: 0 auto 3rem; text-align: center;">Analytical
+                    depth across core bioinformatics domains — visualized as a skill radar.</p>
+                <canvas id="radarCanvas" width="520" height="520" data-reveal="scale" data-delay="200"
+                    style="display: block; margin: 0 auto; max-width: 520px;"></canvas>
             </div>
 
             <!-- Methodology Pledge -->
             <div class="methodology-box" style="margin-top: 8rem;">
                 <p class="badge" style="color: var(--accent);">OPEN SCIENCE COMMITMENT</p>
                 <h4>Reproducibility &amp; Transparency</h4>
-                <p>Every pipeline I build follows version-controlled, containerized standards (Git, Conda, Docker). I believe good science must be reproducible — every result I generate is verifiable, documented, and ready for peer-reviewed scrutiny or collaborative extension.</p>
+                <p>Every pipeline I build follows version-controlled, containerized standards (Git, Conda, Docker). I
+                    believe good science must be reproducible — every result I generate is verifiable, documented, and
+                    ready for peer-reviewed scrutiny or collaborative extension.</p>
             </div>
         </div>
     </section>
@@ -286,44 +291,83 @@
     <section id="projects" class="section">
         <div class="container">
             <h2 class="highlight" data-reveal>Key Projects.</h2>
-            <p class="lead" data-reveal data-delay="100" style="margin-bottom: 5rem;">High-impact initiatives where biology meets engineering to solve specific research challenges.</p>
-            
+            <p class="lead" data-reveal data-delay="100" style="margin-bottom: 5rem;">High-impact initiatives where
+                biology meets engineering to solve specific research challenges.</p>
+
             <div class="project-grid">
-                <!-- Project 1 -->
+                <!-- Project 1: AutoRNAseq -->
                 <div class="project-card" data-reveal>
                     <div class="project-content">
-                        <span class="project-tag">Database Development</span>
-                        <h3>Pakistan's First HCM Drug Database</h3>
-                        <p>Developed an interactive platform for Hypertrophic Cardiomyopathy research, centralizing drug-gene interaction data to facilitate precision medicine in the region.</p>
+                        <span class="project-tag">R-Shiny</span>
+                        <h3>AutoRNAseq</h3>
+                        <p>An automated transcriptomics platform for end-to-end analysis, from quality control to
+                            discovery.</p>
                         <div class="project-footer">
-                            <span class="p-meta"><i class="fa-solid fa-code-branch"></i> MySQL / PHP</span>
-                            <span class="p-meta"><i class="fa-solid fa-flask-vial"></i> Drug-Gene Interaction</span>
+                            <span class="p-meta"><i class="fa-solid fa-gears"></i> HISAT2 / DESeq2</span>
                         </div>
                     </div>
                 </div>
 
-                <!-- Project 2 -->
+                <!-- Project 2: HCMdrugs -->
                 <div class="project-card" data-reveal data-delay="100">
                     <div class="project-content">
-                        <span class="project-tag">Genomic Profiling</span>
-                        <h3>AML Variant Identification (ICCBS)</h3>
-                        <p>Identified 884 novel high-impact variants in Acute Myeloid Leukemia samples using GATK best-practice pipelines during my ICCBS fellowship.</p>
+                        <span class="project-tag">Informatics</span>
+                        <h3>HCMdrugs</h3>
+                        <p>A specialized cardiovascular database for pharmacological trends and drug-gene interactions.
+                        </p>
                         <div class="project-footer">
-                            <span class="p-meta"><i class="fa-solid fa-dna"></i> WES / WGS</span>
-                            <span class="p-meta"><i class="fa-solid fa-shield-virus"></i> Clinical Genomics</span>
+                            <span class="p-meta"><i class="fa-solid fa-database"></i> MySQL / PHP</span>
                         </div>
                     </div>
                 </div>
 
-                <!-- Project 3 -->
+                <!-- Project 3: PGF-Explorer -->
                 <div class="project-card" data-reveal data-delay="200">
                     <div class="project-content">
-                        <span class="project-tag">Python / NLP</span>
-                        <h3>Automated Research Extraction Platform</h3>
-                        <p>Built a custom NLP tool for rapid literature mining, allowing researchers to extract structured data from thousands of scientific PDFs automatically.</p>
+                        <span class="project-tag">Meta-Analysis</span>
+                        <h3>PGF-Explorer</h3>
+                        <p>Interactive platform for exploring genome-wide gene family studies and trend analytics.</p>
                         <div class="project-footer">
-                            <span class="p-meta"><i class="fa-brands fa-python"></i> Python NLP</span>
-                            <span class="p-meta"><i class="fa-solid fa-bolt"></i> Meta-Analysis Ops</span>
+                            <span class="p-meta"><i class="fa-brands fa-js"></i> JS Engine</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 4: Iron Nanoparticles & Wheat -->
+                <div class="project-card" data-reveal data-delay="300">
+                    <div class="project-content">
+                        <span class="project-tag">Nanotechnology</span>
+                        <h3>NP Stress Rescue</h3>
+                        <p>Investigating molecular defense mechanisms in wheat under oxidative stress using profiling.
+                        </p>
+                        <div class="project-footer">
+                            <span class="p-meta"><i class="fa-solid fa-dna"></i> RNA-seq Analysis</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 5: HCM Target Discovery -->
+                <div class="project-card" data-reveal data-delay="400">
+                    <div class="project-content">
+                        <span class="project-tag">Network Medicine</span>
+                        <h3>HCM Target Analysis</h3>
+                        <p>Integrative pipeline for identifying therapeutic targets through protein interaction
+                            networks.</p>
+                        <div class="project-footer">
+                            <span class="p-meta"><i class="fa-solid fa-diagram-project"></i> PPI Networks</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 6: PDF Extractor -->
+                <div class="project-card" data-reveal data-delay="500">
+                    <div class="project-content">
+                        <span class="project-tag">Automation</span>
+                        <h3>Genomewide PDF Extractor</h3>
+                        <p>Python-based utility for structured data extraction from scientific literature and studies.
+                        </p>
+                        <div class="project-footer">
+                            <span class="p-meta"><i class="fa-brands fa-python"></i> Python OS</span>
                         </div>
                     </div>
                 </div>
@@ -335,6 +379,55 @@
     <section id="research" class="section">
         <div class="container">
             <h2 class="highlight" data-reveal>Selected Bibliography.</h2>
+
+            <div class="research-impact-summary" style="margin: 4rem 0 6rem;">
+                <h4
+                    style="font-family: var(--font-mono); font-size: 0.8rem; letter-spacing: 3px; opacity: 0.5; text-transform: uppercase; margin-bottom: 3rem;">
+                    Research Impact & Trajectory</h4>
+                <div class="metrics-grid">
+                    <div class="metric-item" data-target="2" data-reveal="scale">
+                        <div class="metric-ring-wrap">
+                            <svg width="110" height="110" viewBox="0 0 110 110">
+                                <circle class="metric-ring-bg" cx="55" cy="55" r="45" />
+                                <circle class="metric-ring-progress" cx="55" cy="55" r="45" />
+                            </svg>
+                            <span class="metric-number-inner">0</span>
+                        </div>
+                        <span class="metric-label">Published</span>
+                    </div>
+                    <div class="metric-item" data-target="3" data-reveal="scale" data-delay="100">
+                        <div class="metric-ring-wrap">
+                            <svg width="110" height="110" viewBox="0 0 110 110">
+                                <circle class="metric-ring-bg" cx="55" cy="55" r="45" />
+                                <circle class="metric-ring-progress" cx="55" cy="55" r="45" />
+                            </svg>
+                            <span class="metric-number-inner">0</span>
+                        </div>
+                        <span class="metric-label">Under Review</span>
+                    </div>
+                    <div class="metric-item" data-target="1" data-reveal="scale" data-delay="200">
+                        <div class="metric-ring-wrap">
+                            <svg width="110" height="110" viewBox="0 0 110 110">
+                                <circle class="metric-ring-bg" cx="55" cy="55" r="45" />
+                                <circle class="metric-ring-progress" cx="55" cy="55" r="45" />
+                            </svg>
+                            <span class="metric-number-inner">0</span>
+                        </div>
+                        <span class="metric-label">Under Submission</span>
+                    </div>
+                    <div class="metric-item" data-target="2" data-reveal="scale" data-delay="300">
+                        <div class="metric-ring-wrap">
+                            <svg width="110" height="110" viewBox="0 0 110 110">
+                                <circle class="metric-ring-bg" cx="55" cy="55" r="45" />
+                                <circle class="metric-ring-progress" cx="55" cy="55" r="45" />
+                            </svg>
+                            <span class="metric-number-inner">0</span>
+                        </div>
+                        <span class="metric-label">In Progress</span>
+                    </div>
+                </div>
+            </div>
+
             <div class="contribution-grid">
                 <div class="contribution-card">
                     <div style="display: flex; justify-content: space-between; align-items: flex-start;">
@@ -437,7 +530,8 @@
         <div class="container">
             <h2 class="highlight">Scientific Posters.</h2>
             <div class="posters-grid">
-                <div class="gallery-item poster-item" onclick="openLightbox('BSP poster.png', 'Scientific Poster: Biological Systems & Pathways')">
+                <div class="gallery-item poster-item"
+                    onclick="openLightbox('BSP poster.png', 'Scientific Poster: Biological Systems & Pathways')">
                     <div class="gallery-image-wrap">
                         <img src="BSP poster.png" alt="BSP Poster">
                         <div class="gallery-overlay">
@@ -447,7 +541,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="gallery-item poster-item" onclick="openLightbox('poster.png', 'Scientific Poster: Nanotechnology in Remediation')">
+                <div class="gallery-item poster-item"
+                    onclick="openLightbox('poster.png', 'Scientific Poster: Nanotechnology in Remediation')">
                     <div class="gallery-image-wrap">
                         <img src="poster.png" alt="Nano Poster">
                         <div class="gallery-overlay">
@@ -465,8 +560,9 @@
     <section id="gallery" class="section" style="background: rgba(255, 255, 255, 0.02);">
         <div class="container">
             <h2 class="highlight" data-reveal>Analysis Showcase.</h2>
-            <p class="lead" data-reveal data-delay="100" style="margin-bottom: 4rem;">Visual results from genomic pipelines, network analysis, and high-throughput transcriptomics.</p>
-            
+            <p class="lead" data-reveal data-delay="100" style="margin-bottom: 4rem;">Visual results from genomic
+                pipelines, network analysis, and high-throughput transcriptomics.</p>
+
             <div class="gallery-grid">
                 <!-- Item 1 -->
                 <div class="gallery-item" onclick="openLightbox('assets/hub genes.png', 'Genetic Network Interaction')">
@@ -479,110 +575,143 @@
                         </div>
                     </div>
                 </div>
-                
+
                 <!-- Item 2 -->
-                <div class="gallery-item" onclick="openLightbox('assets/stress_gene_heatmap.png', 'Transcriptomics Heatmap')">
+                <div class="gallery-item"
+                    onclick="openLightbox('assets/stress_gene_heatmap.png', 'Transcriptomics Heatmap')">
                     <div class="gallery-image-wrap">
                         <img src="assets/stress_gene_heatmap.png" alt="Heatmap">
                         <div class="gallery-overlay">
                             <span class="gallery-cat">Transcriptomics</span>
                             <h3>Stress Response Heatmap</h3>
                             <div class="gallery-meta">LOG2FC // P-ADJ < 0.05</div>
+                            </div>
                         </div>
                     </div>
-                </div>
 
-                <!-- Item 3 -->
-                <div class="gallery-item" onclick="openLightbox('assets/Transporter_violin_per_sample.png', 'Violin Plot Distribution')">
-                    <div class="gallery-image-wrap">
-                        <img src="assets/Transporter_violin_per_sample.png" alt="Violin Plot">
-                        <div class="gallery-overlay">
-                            <span class="gallery-cat">Population Genomics</span>
-                            <h3>Violin Distribution</h3>
-                            <div class="gallery-meta">EXPRESSION_LEVELS // N=2480</div>
+                    <!-- Item 3 -->
+                    <div class="gallery-item"
+                        onclick="openLightbox('assets/Transporter_violin_per_sample.png', 'Violin Plot Distribution')">
+                        <div class="gallery-image-wrap">
+                            <img src="assets/Transporter_violin_per_sample.png" alt="Violin Plot">
+                            <div class="gallery-overlay">
+                                <span class="gallery-cat">Population Genomics</span>
+                                <h3>Violin Distribution</h3>
+                                <div class="gallery-meta">EXPRESSION_LEVELS // N=2480</div>
+                            </div>
                         </div>
                     </div>
-                </div>
 
-                <!-- Item 4 -->
-                <div class="gallery-item" onclick="openLightbox('assets/visualization.png', 'Pipeline Visualization')">
-                    <div class="gallery-image-wrap">
-                        <img src="assets/visualization.png" alt="Viz">
-                        <div class="gallery-overlay">
-                            <span class="gallery-cat">Data Architecture</span>
-                            <h3>Pipeline Mapping</h3>
-                            <div class="gallery-meta">SNKMAKE // REPRODUCIBILITY</div>
+                    <!-- Item 4 -->
+                    <div class="gallery-item"
+                        onclick="openLightbox('assets/visualization.png', 'Pipeline Visualization')">
+                        <div class="gallery-image-wrap">
+                            <img src="assets/visualization.png" alt="Viz">
+                            <div class="gallery-overlay">
+                                <span class="gallery-cat">Data Architecture</span>
+                                <h3>Pipeline Mapping</h3>
+                                <div class="gallery-meta">SNKMAKE // REPRODUCIBILITY</div>
+                            </div>
                         </div>
                     </div>
-                </div>
 
-                <!-- Item 5 -->
-                <div class="gallery-item" onclick="openLightbox('assets/antioxidant and oxidative stress markers.png', 'Oxidative Stress Markers')">
-                    <div class="gallery-image-wrap">
-                        <img src="assets/antioxidant and oxidative stress markers.png" alt="Markers">
-                        <div class="gallery-overlay">
-                            <span class="gallery-cat">Biochemical Analysis</span>
-                            <h3>Marker Profiling</h3>
-                            <div class="gallery-meta">OXIDATIVE_STRESS // METABOLOMICS</div>
+                    <!-- Item 5 -->
+                    <div class="gallery-item"
+                        onclick="openLightbox('assets/antioxidant and oxidative stress markers.png', 'Oxidative Stress Markers')">
+                        <div class="gallery-image-wrap">
+                            <img src="assets/antioxidant and oxidative stress markers.png" alt="Markers">
+                            <div class="gallery-overlay">
+                                <span class="gallery-cat">Biochemical Analysis</span>
+                                <h3>Marker Profiling</h3>
+                                <div class="gallery-meta">OXIDATIVE_STRESS // METABOLOMICS</div>
+                            </div>
                         </div>
                     </div>
-                </div>
 
-                <!-- Item 6 -->
-                <div class="gallery-item" onclick="openLightbox('assets/1 (4).png', 'Comparative Analysis I')">
-                    <div class="gallery-image-wrap">
-                        <img src="assets/1 (4).png" alt="Comp A">
-                        <div class="gallery-overlay">
-                            <span class="gallery-cat">Comparative Study</span>
-                            <h3>Pathway Enrichment</h3>
-                            <div class="gallery-meta">KEGG // GO_TERMS</div>
+                    <!-- Item 6 -->
+                    <div class="gallery-item" onclick="openLightbox('assets/1 (4).png', 'Comparative Analysis I')">
+                        <div class="gallery-image-wrap">
+                            <img src="assets/1 (4).png" alt="Comp A">
+                            <div class="gallery-overlay">
+                                <span class="gallery-cat">Comparative Study</span>
+                                <h3>Pathway Enrichment</h3>
+                                <div class="gallery-meta">KEGG // GO_TERMS</div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
     </section>
 
     <!-- Section 4.7: Scientific Life -->
     <section id="scientific-life" class="section" style="padding: 10rem 0; overflow: hidden;">
         <div class="container" style="padding: 0 8%;">
             <h2 class="highlight" data-reveal>Scientific Life.</h2>
-            <p class="lead" data-reveal data-delay="100">Snapshots from the lab, conferences, and the vibrant scientific community.</p>
+            <p class="lead" data-reveal data-delay="100">Snapshots from the lab, conferences, and the vibrant scientific
+                community.</p>
         </div>
-        
+
         <div class="slider-container" data-reveal data-delay="200">
             <div class="slider-track">
                 <!-- Items (Original Set) -->
-                <div class="slide" onclick="openLightbox('image.jpeg', 'Field Work')"><img src="image.jpeg" alt="Lab 1"></div>
-                <div class="slide" onclick="openLightbox('image23.jpeg', 'Lab Assay')"><img src="image23.jpeg" alt="Lab 2"></div>
-                <div class="slide" onclick="openLightbox('image12.jpeg', 'Conference')"><img src="image12.jpeg" alt="Lab 3"></div>
-                <div class="slide" onclick="openLightbox('image8.jpeg', 'Network')"><img src="image8.jpeg" alt="Lab 4"></div>
-                <div class="slide" onclick="openLightbox('image9.jpeg', 'Computing')"><img src="image9.jpeg" alt="Lab 5"></div>
-                <div class="slide" onclick="openLightbox('image11.jpeg', 'Biolab')"><img src="image11.jpeg" alt="Lab 6"></div>
-                <div class="slide" onclick="openLightbox('image16.jpeg', 'Sample')"><img src="image16.jpeg" alt="Lab 7"></div>
-                <div class="slide" onclick="openLightbox('image24.jpeg', 'Dialogue')"><img src="image24.jpeg" alt="Lab 8"></div>
-                <div class="slide" onclick="openLightbox('image3.jpeg', 'Apparatus')"><img src="image3.jpeg" alt="Lab 9"></div>
-                <div class="slide" onclick="openLightbox('image10.jpeg', 'Team')"><img src="image10.jpeg" alt="Lab 10"></div>
-                <div class="slide" onclick="openLightbox('image13.jpeg', 'Field')"><img src="image13.jpeg" alt="Lab 11"></div>
-                <div class="slide" onclick="openLightbox('image17.jpeg', 'Microscopy')"><img src="image17.jpeg" alt="Lab 12"></div>
-                <div class="slide" onclick="openLightbox('image19.jpeg', 'Assembly')"><img src="image19.jpeg" alt="Lab 13"></div>
-                <div class="slide" onclick="openLightbox('imagenano.jpeg', 'Nanotech')"><img src="imagenano.jpeg" alt="Lab 14"></div>
-                
+                <div class="slide" onclick="openLightbox('image.jpeg', 'Field Work')"><img src="image.jpeg" alt="Lab 1">
+                </div>
+                <div class="slide" onclick="openLightbox('image23.jpeg', 'Lab Assay')"><img src="image23.jpeg"
+                        alt="Lab 2"></div>
+                <div class="slide" onclick="openLightbox('image12.jpeg', 'Conference')"><img src="image12.jpeg"
+                        alt="Lab 3"></div>
+                <div class="slide" onclick="openLightbox('image8.jpeg', 'Network')"><img src="image8.jpeg" alt="Lab 4">
+                </div>
+                <div class="slide" onclick="openLightbox('image9.jpeg', 'Computing')"><img src="image9.jpeg"
+                        alt="Lab 5"></div>
+                <div class="slide" onclick="openLightbox('image11.jpeg', 'Biolab')"><img src="image11.jpeg" alt="Lab 6">
+                </div>
+                <div class="slide" onclick="openLightbox('image16.jpeg', 'Sample')"><img src="image16.jpeg" alt="Lab 7">
+                </div>
+                <div class="slide" onclick="openLightbox('image24.jpeg', 'Dialogue')"><img src="image24.jpeg"
+                        alt="Lab 8"></div>
+                <div class="slide" onclick="openLightbox('image3.jpeg', 'Apparatus')"><img src="image3.jpeg"
+                        alt="Lab 9"></div>
+                <div class="slide" onclick="openLightbox('image10.jpeg', 'Team')"><img src="image10.jpeg" alt="Lab 10">
+                </div>
+                <div class="slide" onclick="openLightbox('image13.jpeg', 'Field')"><img src="image13.jpeg" alt="Lab 11">
+                </div>
+                <div class="slide" onclick="openLightbox('image17.jpeg', 'Microscopy')"><img src="image17.jpeg"
+                        alt="Lab 12"></div>
+                <div class="slide" onclick="openLightbox('image19.jpeg', 'Assembly')"><img src="image19.jpeg"
+                        alt="Lab 13"></div>
+                <div class="slide" onclick="openLightbox('imagenano.jpeg', 'Nanotech')"><img src="imagenano.jpeg"
+                        alt="Lab 14"></div>
+
                 <!-- Items (Duplicate for Infinity Loop) -->
-                <div class="slide" onclick="openLightbox('image.jpeg', 'Field Work')"><img src="image.jpeg" alt="Lab 1"></div>
-                <div class="slide" onclick="openLightbox('image23.jpeg', 'Lab Assay')"><img src="image23.jpeg" alt="Lab 2"></div>
-                <div class="slide" onclick="openLightbox('image12.jpeg', 'Conference')"><img src="image12.jpeg" alt="Lab 3"></div>
-                <div class="slide" onclick="openLightbox('image8.jpeg', 'Network')"><img src="image8.jpeg" alt="Lab 4"></div>
-                <div class="slide" onclick="openLightbox('image9.jpeg', 'Computing')"><img src="image9.jpeg" alt="Lab 5"></div>
-                <div class="slide" onclick="openLightbox('image11.jpeg', 'Biolab')"><img src="image11.jpeg" alt="Lab 6"></div>
-                <div class="slide" onclick="openLightbox('image16.jpeg', 'Sample')"><img src="image16.jpeg" alt="Lab 7"></div>
-                <div class="slide" onclick="openLightbox('image24.jpeg', 'Dialogue')"><img src="image24.jpeg" alt="Lab 8"></div>
-                <div class="slide" onclick="openLightbox('image3.jpeg', 'Apparatus')"><img src="image3.jpeg" alt="Lab 9"></div>
-                <div class="slide" onclick="openLightbox('image10.jpeg', 'Team')"><img src="image10.jpeg" alt="Lab 10"></div>
-                <div class="slide" onclick="openLightbox('image13.jpeg', 'Field')"><img src="image13.jpeg" alt="Lab 11"></div>
-                <div class="slide" onclick="openLightbox('image17.jpeg', 'Microscopy')"><img src="image17.jpeg" alt="Lab 12"></div>
-                <div class="slide" onclick="openLightbox('image19.jpeg', 'Assembly')"><img src="image19.jpeg" alt="Lab 13"></div>
-                <div class="slide" onclick="openLightbox('imagenano.jpeg', 'Nanotech')"><img src="imagenano.jpeg" alt="Lab 14"></div>
+                <div class="slide" onclick="openLightbox('image.jpeg', 'Field Work')"><img src="image.jpeg" alt="Lab 1">
+                </div>
+                <div class="slide" onclick="openLightbox('image23.jpeg', 'Lab Assay')"><img src="image23.jpeg"
+                        alt="Lab 2"></div>
+                <div class="slide" onclick="openLightbox('image12.jpeg', 'Conference')"><img src="image12.jpeg"
+                        alt="Lab 3"></div>
+                <div class="slide" onclick="openLightbox('image8.jpeg', 'Network')"><img src="image8.jpeg" alt="Lab 4">
+                </div>
+                <div class="slide" onclick="openLightbox('image9.jpeg', 'Computing')"><img src="image9.jpeg"
+                        alt="Lab 5"></div>
+                <div class="slide" onclick="openLightbox('image11.jpeg', 'Biolab')"><img src="image11.jpeg" alt="Lab 6">
+                </div>
+                <div class="slide" onclick="openLightbox('image16.jpeg', 'Sample')"><img src="image16.jpeg" alt="Lab 7">
+                </div>
+                <div class="slide" onclick="openLightbox('image24.jpeg', 'Dialogue')"><img src="image24.jpeg"
+                        alt="Lab 8"></div>
+                <div class="slide" onclick="openLightbox('image3.jpeg', 'Apparatus')"><img src="image3.jpeg"
+                        alt="Lab 9"></div>
+                <div class="slide" onclick="openLightbox('image10.jpeg', 'Team')"><img src="image10.jpeg" alt="Lab 10">
+                </div>
+                <div class="slide" onclick="openLightbox('image13.jpeg', 'Field')"><img src="image13.jpeg" alt="Lab 11">
+                </div>
+                <div class="slide" onclick="openLightbox('image17.jpeg', 'Microscopy')"><img src="image17.jpeg"
+                        alt="Lab 12"></div>
+                <div class="slide" onclick="openLightbox('image19.jpeg', 'Assembly')"><img src="image19.jpeg"
+                        alt="Lab 13"></div>
+                <div class="slide" onclick="openLightbox('imagenano.jpeg', 'Nanotech')"><img src="imagenano.jpeg"
+                        alt="Lab 14"></div>
             </div>
         </div>
     </section>
@@ -607,7 +736,7 @@
                 <input type="hidden" name="_captcha" value="false">
                 <input type="hidden" name="_subject" value="New Research Collaboration Request">
                 <input type="hidden" name="_template" value="table">
-                
+
                 <div class="form-row">
                     <div class="form-group">
                         <label class="form-label">Your Name</label>
@@ -643,7 +772,7 @@
     </section>
 
     <footer style="padding: 6rem; text-align: center; opacity: 0.3; font-size: 0.8rem; letter-spacing: 2px;">
-        &copy; 2026 MUHAMMAD HARIS // BIOINFORMATICS &amp; COMPUTATIONAL BIOLOGY
+        &copy; 2026 MUHAMMAD HARIS
     </footer>
 
     <script src="script.js"></script>
