@@ -8,8 +8,8 @@
     --accent2: #39ff14;
     --accent3: #7c3aed;
     --dim: #4a6080;
-    --border: rgba(0, 245, 255, 0.15);
-    --border2: rgba(255,255,255,0.07);
+    --border: rgba(0, 245, 255, 0.4);
+    --border2: rgba(0, 245, 255, 0.25);
     --font-heading: 'Plus Jakarta Sans', sans-serif;
     --font-body: 'Manrope', sans-serif;
     --font-mono: 'JetBrains Mono', monospace;
@@ -378,12 +378,16 @@ p.lead {
 }
 
 .bio-stat {
-    background: rgba(255, 255, 255, 0.03);
-    border: 1px solid rgba(255, 255, 255, 0.05);
-    padding: 2.5rem;
-    border-radius: 30px;
+    background: rgba(0, 245, 255, 0.03);
+    border: 1px solid var(--border2);
+    padding: 1.5rem;
+    border-radius: 20px;
     text-align: center;
-    transition: all 0.4s;
+    transition: var(--transition);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     min-width: 160px;
 }
 
@@ -440,13 +444,14 @@ p.lead {
 }
 .service-card {
     padding:3rem;
-    background:rgba(5,13,26,0.8);
-    border:1px solid var(--border2);
+    background:rgba(5,13,26,0.9);
+    border:1px solid var(--border);
     border-radius:24px;
     transition:var(--transition);
     position:relative; overflow:hidden;
     transform-style:preserve-3d;
     text-align: center;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.4), inset 0 0 20px rgba(0, 245, 255, 0.05);
 }
 .service-card::before {
     content:'';
@@ -456,9 +461,9 @@ p.lead {
 }
 .service-card:hover::before { opacity:1; }
 .service-card:hover {
-    border-color:var(--accent);
-    box-shadow:var(--glow), inset 0 0 40px rgba(0,245,255,0.03);
-    transform:translateY(-10px);
+    border-color: var(--accent);
+    box-shadow: 0 0 40px rgba(0, 245, 255, 0.2), inset 0 0 40px rgba(0, 245, 255, 0.05);
+    transform: translateY(-10px);
 }
 .service-card-icon {
     width:52px; height:52px;
@@ -490,10 +495,11 @@ p.lead {
 .stack-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:2rem; }
 .stack-tile {
     padding:2.5rem;
-    background:rgba(5,13,26,0.7);
+    background:rgba(5,13,26,0.9);
     border:1px solid var(--border2);
     border-radius:24px;
     transition:var(--transition);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
 }
 .stack-tile:hover { border-color:var(--accent); box-shadow:var(--glow); }
 .stack-group-title {
@@ -511,14 +517,15 @@ p.lead {
 }
 
 .project-card {
-    background: rgba(255, 255, 255, 0.02);
-    border: 1px solid rgba(255, 255, 255, 0.05);
+    background: rgba(10, 20, 40, 0.6);
+    border: 1px solid var(--border);
     border-radius: 24px;
     padding: 2.5rem;
     transition: all 0.5s cubic-bezier(0.2, 0, 0.2, 1);
     position: relative;
     overflow: hidden;
     text-align: center;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.4), inset 0 0 15px rgba(0, 245, 255, 0.03);
 }
 
 .project-card::after {
@@ -530,8 +537,9 @@ p.lead {
 
 .project-card:hover {
     background: rgba(255, 255, 255, 0.04);
-    border-color: rgba(0, 245, 255, 0.2);
+    border-color: var(--accent);
     transform: translateY(-10px) scale(1.02);
+    box-shadow: 0 0 40px rgba(0, 245, 255, 0.2);
 }
 
 .project-card:hover::after { opacity: 1; }
@@ -598,7 +606,7 @@ p.lead {
 .methodology-box {
     padding:4rem; 
     background:rgba(0, 245, 255, 0.05);
-    border:1px solid rgba(0, 245, 255, 0.2); 
+    border:1px solid var(--border); 
     border-radius:40px;
     margin-top:8rem;
     position:relative; overflow:hidden;
@@ -642,13 +650,14 @@ p.lead {
     text-align: left;
 }
 .contribution-card {
-    background:rgba(5,13,26,0.8);
-    border:1px solid var(--border2);
+    background:rgba(5,13,26,0.9);
+    border:1px solid var(--border);
     padding:2.5rem; border-radius:24px;
     transition:var(--transition);
     display:flex; flex-direction:column;
     min-height:380px; position:relative; overflow:hidden;
     text-align: center;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.4), inset 0 0 20px rgba(0, 245, 255, 0.05);
 }
 .contribution-card::after {
     content:''; position:absolute;
@@ -658,9 +667,9 @@ p.lead {
 }
 .contribution-card:hover::after { width:100%; }
 .contribution-card:hover {
-    border-color:rgba(0,245,255,0.3);
-    transform:translateY(-8px);
-    box-shadow:0 30px 80px rgba(0,0,0,0.5), var(--glow);
+    border-color: var(--accent);
+    transform: translateY(-8px);
+    box-shadow: 0 30px 80px rgba(0,0,0,0.5), 0 0 40px rgba(0, 245, 255, 0.2);
 }
 .contribution-card h3 { font-size:1.5rem; line-height:1.35; margin-bottom:1.5rem; color:#fff; font-weight:600; }
 .citation-label {
@@ -947,8 +956,8 @@ footer {
         justify-content: center;
     }
     #heroCanvas {
-        width: 300px;
-        height: 400px;
+        width: 260px;
+        height: 340px;
         margin: 0 auto;
     }
     .service-cards { grid-template-columns: repeat(2, minmax(0, 1fr)); }
@@ -958,9 +967,9 @@ footer {
 }
 
 @media (max-width: 768px) {
-    :root { --section-gap: 6rem; }
+    :root { --section-gap: 4rem; }
     
-    /* Mobile Navigation: Bottom Pill */
+    .hero { padding-top: 6rem; min-height: auto; }
     .nav-pill {
         top: auto;
         bottom: 2rem;
