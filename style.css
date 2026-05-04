@@ -629,6 +629,13 @@ p.lead {
     grid-template-columns:repeat(2,1fr);
     gap:2.5rem; margin-top:5rem;
 }
+.contribution-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 1.5rem;
+    text-align: left;
+}
 .contribution-card {
     background:rgba(5,13,26,0.8);
     border:1px solid var(--border2);
@@ -912,22 +919,112 @@ footer {
 .lb-close:hover { opacity:1; }
 
 /* Responsive */
-@media(max-width:1100px) {
-    .hero-inner { flex-direction: column; }
-    #heroCanvas { width: 300px; height: 380px; }
-    .service-cards { grid-template-columns:repeat(2,1fr); }
-    .contribution-grid { grid-template-columns:1fr; }
-    .stack-grid { grid-template-columns:repeat(2,1fr); }
-    .impact-bar { grid-template-columns:repeat(2,1fr); }
-    .gallery-grid { grid-template-columns:repeat(2,1fr); }
+/* --- RESPONSIVE OVERHAUL --- */
+
+@media (max-width: 1200px) {
+    :root { --section-gap: 8rem; }
+    .container { max-width: 95%; }
 }
-@media(max-width:768px) {
-    .service-cards { grid-template-columns:1fr; }
-    .stack-grid { grid-template-columns:1fr; }
-    .impact-bar { grid-template-columns:repeat(2,1fr); }
-    .gallery-grid { grid-template-columns:repeat(2,1fr); }
-    .form-row { grid-template-columns:1fr; }
-    .institutional-bar { flex-direction:column; gap:1.5rem; padding: 2rem; align-items: flex-start; }
+
+@media (max-width: 1024px) {
+    .hero-inner {
+        grid-template-columns: 1fr;
+        text-align: center;
+        gap: 3rem;
+    }
+    .hero-inner > div { text-align: center; }
+    .hero-inner .lead, .hero-inner .badge, .hero-inner .typewriter-wrap {
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .hero-inner .scientific-links, .hero-inner .hero-btns {
+        justify-content: center;
+    }
+    #heroCanvas {
+        width: 300px;
+        height: 400px;
+        margin: 0 auto;
+    }
+    .service-cards { grid-template-columns: repeat(2, 1fr); }
+    .stack-grid { grid-template-columns: repeat(2, 1fr); }
+    .contribution-grid { grid-template-columns: 1fr; }
+    .metrics-grid { grid-template-columns: repeat(2, 1fr); gap: 3rem; }
+}
+
+@media (max-width: 768px) {
+    :root { --section-gap: 6rem; }
+    
+    /* Mobile Navigation: Bottom Pill */
+    .nav-pill {
+        top: auto;
+        bottom: 2rem;
+        padding: 0.8rem 1.5rem;
+        gap: 1.2rem;
+        width: 90%;
+        max-width: 450px;
+        overflow-x: auto;
+        justify-content: flex-start;
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+    }
+    .nav-pill::-webkit-scrollbar { display: none; }
+    .nav-pill a { font-size: 0.7rem; white-space: nowrap; }
+
+    h1 { margin-bottom: 1.5rem; }
+    h2 { margin-bottom: 2rem; }
+
+    .bio-layout { gap: 3rem; }
+    .bio-visual-inner { grid-template-columns: repeat(2, 1fr); gap: 1rem; }
+    .bio-stat { padding: 1.5rem; min-width: auto; }
+
+    .service-cards { grid-template-columns: 1fr; gap: 1.5rem; }
+    .stack-grid { grid-template-columns: 1fr; gap: 1.2rem; }
+    
+    .institutional-bar {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1.5rem;
+        padding: 1.5rem;
+    }
     .inst-divider { width: 100%; height: 1px; background: rgba(0, 245, 255, 0.1); }
-    .hero-btns { flex-direction:column; align-items:flex-start; }
+    
+    .form-row { grid-template-columns: 1fr; gap: 1rem; }
+    
+    .methodology-box { padding: 2.5rem 1.5rem; border-radius: 30px; }
+    .methodology-box h4 { font-size: 1.5rem; }
+    
+    .posters-grid { gap: 2rem; }
+    .poster-item { width: 100%; max-width: 300px; }
+
+    #radarCanvas { width: 100% !important; height: auto !important; max-width: 400px; }
+    
+    .slider-track {
+        animation-duration: 30s; /* Faster for mobile feeling */
+    }
+}
+
+@media (max-width: 480px) {
+    :root { --section-gap: 5rem; }
+    
+    .section { padding: var(--section-gap) 5%; }
+    
+    .nav-pill {
+        bottom: 1rem;
+        width: 95%;
+        gap: 1rem;
+        padding: 0.7rem 1rem;
+    }
+    
+    .hero-btns { flex-direction: column; width: 100%; }
+    .btn-large, .btn-outline { width: 100%; justify-content: center; }
+    
+    .metrics-grid { grid-template-columns: 1fr; gap: 2rem; }
+    
+    .bio-visual-inner { grid-template-columns: 1fr; }
+    
+    .contribution-card { padding: 1.5rem; min-height: auto; }
+    .contribution-header { flex-direction: column; gap: 1rem; }
+    
+    .gallery-grid { grid-template-columns: 1fr; }
 }
